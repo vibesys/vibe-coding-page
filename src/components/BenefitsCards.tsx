@@ -86,11 +86,11 @@ const BenefitsCards = () => {
           <Button 
             asChild
             className={`inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-white rounded-md font-medium transition-all duration-300 hover-up vibrant-shadow-orange 
-            ${isMobile ? 'text-base px-4 py-3 max-w-[90%] mx-auto' : 'text-lg px-8 py-4'}`}
+            ${isMobile ? 'text-sm px-4 py-2 w-auto max-w-[90%] mx-auto' : 'text-lg px-8 py-4'}`}
           >
             <a href="https://wa.me/5511973413045" target="_blank" rel="noreferrer">
-              Solicite seu projeto agora mesmo!
-              <ArrowRight size={isMobile ? 18 : 20} />
+              <span className={`${isMobile ? 'text-sm' : 'text-lg'}`}>Solicite seu projeto agora mesmo!</span>
+              <ArrowRight size={isMobile ? 16 : 20} />
             </a>
           </Button>
         </div>
