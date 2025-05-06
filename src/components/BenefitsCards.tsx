@@ -1,11 +1,12 @@
-
 import { 
   BadgeDollarSign, 
   Settings, 
   HeadsetIcon, 
   Database, 
-  TrendingUp 
+  TrendingUp,
+  ArrowRight
 } from 'lucide-react';
+import { Button } from './ui/button';
 
 const BenefitsCards = () => {
   const benefits = [
@@ -78,18 +79,15 @@ const BenefitsCards = () => {
 
         <div className="mt-16 text-center">
           <h3 className="text-2xl font-bold mb-6">Pronto para transformar seu negócio?</h3>
-          <a 
-            href="https://wa.me/5511973413045" 
-            target="_blank" 
-            rel="noreferrer"
+          <Button 
+            asChild
             className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-white px-8 py-4 rounded-md font-medium text-lg transition-all duration-300 hover-up vibrant-shadow-orange"
           >
-            Solicite seu projeto agora mesmo!
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M5 12h14"></path>
-              <path d="m12 5 7 7-7 7"></path>
-            </svg>
-          </a>
+            <a href="https://wa.me/5511973413045" target="_blank" rel="noreferrer">
+              Solicite seu projeto agora mesmo!
+              <ArrowRight size={20} />
+            </a>
+          </Button>
         </div>
       </div>
     </section>

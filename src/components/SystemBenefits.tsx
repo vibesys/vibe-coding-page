@@ -1,5 +1,6 @@
 
 import { ListTodo, Users, ShoppingCart, Package, Calendar, Wallet, Briefcase } from 'lucide-react';
+import { Button } from './ui/button';
 
 const SystemBenefits = () => {
   // Systems with icons
@@ -118,20 +119,24 @@ const SystemBenefits = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <a 
-            href="https://wa.me/5511973413045" 
-            target="_blank" 
-            rel="noreferrer"
+          <Button 
+            asChild
             className="bg-secondary hover:bg-secondary/90 text-white px-6 py-3 rounded-md font-medium flex items-center justify-center gap-2 transition-all duration-300 hover-up"
           >
-            Quero crescer meu negócio
-          </a>
-          <a 
-            href="#nossa-historia"
+            <a href="https://wa.me/5511973413045" target="_blank" rel="noreferrer">
+              Quero crescer meu negócio
+            </a>
+          </Button>
+          
+          <Button 
+            asChild
+            variant="outline" 
             className="bg-transparent border border-primary text-primary hover:bg-primary/10 px-6 py-3 rounded-md font-medium transition-all duration-300"
           >
-            Conheça nossa história
-          </a>
+            <a href="#nossa-historia">
+              Conheça nossa história
+            </a>
+          </Button>
         </div>
       </div>
     </section>

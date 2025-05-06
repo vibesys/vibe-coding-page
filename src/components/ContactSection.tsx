@@ -1,5 +1,6 @@
 
 import { ArrowRight } from 'lucide-react';
+import { Button } from './ui/button';
 
 const ContactSection = () => {
   return (
@@ -18,23 +19,16 @@ const ContactSection = () => {
               Respostas rápidas, sem burocracia. Converse diretamente com quem vai desenvolver sua solução.
             </p>
             
-            <div className="flex flex-col md:flex-row gap-6 justify-center">
-              <a 
-                href="https://wa.me/5511973413045" 
-                target="_blank" 
-                rel="noreferrer"
+            <div className="flex justify-center">
+              <Button 
+                asChild
                 className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary/80 text-white px-8 py-4 rounded-lg font-medium flex items-center justify-center gap-2 transition-all duration-300 hover-up group vibrant-shadow"
               >
-                Conversar pelo WhatsApp
-                <ArrowRight size={20} className="transition-transform duration-300 group-hover:translate-x-1" />
-              </a>
-              
-              <a 
-                href="mailto:contato@vibesys.com.br"
-                className="bg-transparent border border-gray-700 hover:border-primary text-white px-8 py-4 rounded-lg font-medium transition-colors duration-300"
-              >
-                Enviar um email
-              </a>
+                <a href="https://wa.me/5511973413045" target="_blank" rel="noreferrer">
+                  Conversar pelo WhatsApp
+                  <ArrowRight size={20} className="transition-transform duration-300 group-hover:translate-x-1" />
+                </a>
+              </Button>
             </div>
             
             <p className="mt-8 text-sm text-gray-400">

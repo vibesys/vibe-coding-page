@@ -1,5 +1,6 @@
 
 import { ArrowRight } from 'lucide-react';
+import { Button } from './ui/button';
 
 const Hero = () => {
   return (
@@ -62,7 +63,7 @@ const Hero = () => {
         </div>
       </div>
       
-      <div className="absolute bottom-8 left-0 right-0 flex justify-center">
+      <div className="absolute bottom-8 left-0 right-0 flex justify-center z-20">
         <div className="animate-bounce">
           <a href="#quem-somos" className="flex flex-col items-center text-gray-400 hover:text-white">
             <span className="text-sm">Descubra mais</span>
